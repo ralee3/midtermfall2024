@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../week5_sampleassignment_practice/simple-webpageassignment-5"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "midterm_fall_2024"
+	}
+}

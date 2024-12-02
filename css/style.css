@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 7%; /* Add margin to the top */
+  width: 100%; /* Set the width to span the full viewport */
+  height: 100vh; /* Set the height to the full viewport height */
+}
+
+
+
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 1.5em 2em; /* Increase the padding to make the space larger */
+  border-bottom: none; /* Remove the bottom line */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Spread out logo, navigation, and social media */
+  align-items: center; /* Vertically align items */
+}
+
+nav img {
+  width: 20%;
+  margin: 10px 0;
+}
+
+nav ul {
+  display: flex; /* Flexbox for navigation links */
+  gap: 1em; /* Add space between links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  font-size: 1.2em; /* Increase font size for links */
+  text-decoration: none;
+  color: #000;
+}
+
+nav .social-media {
+  display: flex; /* Align social media icons in a row */
+  gap: 0.5em; /* Add space between icons */
+}
+
+nav .social-media a img {
+  width: 24px; /* Size for social media icons */
+  height: 24px;
+}
+
+
+.main-container {
+  margin-top: 100px; /* Offset for fixed navbar */
+  padding: 3em 2em; /* Add padding for inner spacing */
+  width: 100%; /* Expand the container to full width */
+  margin: 0 auto; /* Center horizontally */
+  padding-bottom: 100px; /* Add bottom padding */
+  box-shadow: none; /* Remove the shadow (watermark effect) */
+  background-color: transparent; /* Remove background color */
+}
+
+main article{
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out text and image */
+  align-items: center; /* Vertically align text and image */
+  gap: 1em; /* Add space between text and image within each article */
+  margin-bottom: 15em; /* Increase space between articles */
+}
+
+main article.Story {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out text and image */
+  align-items: center; /* Vertically align text and image */
+  gap: 1em; /* Add space between text and image */
+  margin-bottom: 2em; /* Space between articles */
+  background-color: #c08507;
+  padding: 1.5em; /* Add padding for internal spacing */
+  border-radius: 8px; /* Add rounded corners */
+  color: #fff; 
+  margin-top: 15em;/* Add spacing between this and the previous article */
+}
+
+main article.Story .text {
+  width: 33.33%; /* Allocate 1/3 of the space for the text */
+  text-align: left; /* Align text to the left */
+  padding: 1em; /* Add padding for spacing */
+  display: block; /* Ensure stacking of elements */
+  border-radius: 8px; /* Add rounded corners */
+  color: #fff; /* Adjust text color for contrast */
+}
+
+main article.Story .text h1 {
+  font-size: 2em; /* Adjust title font size */
+  margin-bottom: 0.5em; /* Space below the title */
+}
+
+main article.Story .text p {
+  font-size: 1.1em; /* Adjust paragraph font size */
+  line-height: 1.5; /* Improve readability */
+  margin: 0; /* Remove default margins for alignment */
+}
+
+main article.Story .imageGroup {
+  flex: 2; /* Allocate 2/3 of the space for the image container */
+  display: flex; /* Ensure the image container uses flex layout */
+  justify-content: flex-end; /* Align the image to the right */
+}
+
+main article.Story .imageGroup img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Add rounded corners */
+  object-fit: cover; /* Ensure the image fits nicely within its container */
+  max-width: 100%; /* Prevent the image from overflowing */
+}
+
+main article.Coffee {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out image and text */
+  align-items: center; /* Vertically align content */
+  gap: 0em; /* Add space between image and text */
+  margin: 0 15%; /* Add 15% margin to the left and right */
+  background-color: #d3b87f;
+  margin-top: 15em;/* Add spacing between this and the previous article */
+}
+
+main article.Coffee .imageGroup {
+  flex: 2; /* Allocate 2/3 of the space for the image container */
+  display: flex; /* Ensure the image container uses flex layout */
+  justify-content: flex-end; /* Align the image to the left */
+}
+
+main article.Coffee .imageGroup img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Add rounded corners */
+  object-fit: cover; /* Ensure the image fits nicely within its container */
+  max-width: 100%; /* Prevent the image from overflowing */
+}
+
+main article.Coffee .text {
+  width: 33.33%; /* Allocate 1/3 of the space for the text */
+  text-align: left;/* Align text to the left */
+  padding: 1em; /* Add padding for spacing */
+  display: block; /* Ensure stacking of elements */
+}
+
+main article.Coffee .text h1{
+  font-size: 2em; /* Adjust title font size */
+  margin-bottom: 0.5em; /* Space below the title */
+}
+
+main article.Coffee .text p {
+  font-size: 1.1em; /* Adjust paragraph font size */
+  line-height: 1.5; /* Improve readability */
+  margin: 0; /* Remove default margins for alignment */
+}
+
+main article.Vibe {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out text and image */
+  align-items: center; /* Vertically align text and image */
+  gap: 1em; /* Add space between text and image */
+  margin-bottom: 2em; /* Space between articles */
+  background-color: #c08507;
+  padding: 1.5em; /* Add padding for internal spacing */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  color: #fff; /* Optional: Adjust text color for contrast */
+  margin-top: 15em;/* Add spacing between this and the previous article */
+}
+
+main article.Vibe .text {
+  width: 33.33%; /* Allocate 1/3 of the space for the text */
+  text-align: left; /* Align text to the left */
+  padding: 1em; /* Add padding for spacing */
+  display: block; /* Ensure stacking of elements */
+}
+
+main article.Vibe .text h1 {
+  font-size: 2em; /* Adjust title font size */
+  margin-bottom: 0.5em; /* Space below the title */
+}
+
+main article.Vibe .text p {
+  font-size: 1.1em; /* Adjust paragraph font size */
+  line-height: 1.5; /* Improve readability */
+  margin: 0; /* Remove default margins for alignment */
+}
+
+main article.Vibe .imageGroup {
+  flex: 2; /* Allocate 2/3 of the space for the image container */
+  display: flex; /* Ensure the image container uses flex layout */
+  justify-content: flex-end; /* Align the image to the right */
+}
+
+main article.Vibe .imageGroup img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Add rounded corners */
+  object-fit: cover; /* Ensure the image fits nicely within its container */
+  max-width: 100%; /* Prevent the image from overflowing */
+}
+
+
+footer{
+  color: #ffffff;
+  background: #ca7403;
+  padding: 3px;
+  text-align: center;
+}
